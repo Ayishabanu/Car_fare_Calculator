@@ -25,7 +25,8 @@ const results = document.querySelector('#results');
         let updown = (Kilometer * 2);
         let liter= updown / Milege;
         let rate= liter * Petrol;
-        results.textContent = `Rs.${rate} `;
+        let res=rate.toFixed(2);
+        results.textContent = `Rs.${res} `;
         document.querySelector('#Kilometer').value = '';
         document.querySelector('#Petrol').value = '';
     }
